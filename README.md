@@ -42,65 +42,20 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## SaaS/Hosted Platforms
 
+Market Overview: The global video conferencing and unified business communication market is estimated at **$13 billion to $40 billion** (projected to reach $50B+ by 2030) and is **moderately fragmented**, dominated by bundled enterprise tech giants alongside dedicated video conferencing platforms.
 
-
-- **[Zoom Workplace](https://zoom.us/)**  
-
-  **The dominant video conferencing platform** — meetings, webinars, phone, chat, and AI Companion. **Free tier limits group meetings to 40 minutes**; paid from $14.99/month. **The reference for video meetings** .
-
-
-
-- **[Microsoft Teams](https://www.microsoft.com/microsoft-teams/)**  
-
-  **Enterprise collaboration hub** — chat, video meetings, calling, and Office 365 integration. **Bundled with Microsoft 365** — the default for Microsoft-centric organizations .
-
-
-
-- **[Google Meet](https://meet.google.com/)**  
-
-  **Browser-based video conferencing integrated with Google Workspace** . **The simplest video meeting experience** — no downloads required, free tier limits group calls to 60 minutes .
-
-
-
-- **[Cisco Webex](https://www.webex.com/)**  
-
-  **Enterprise UC suite** — meetings, calling, messaging, and contact center. **Strong in regulated industries** with compliance certifications .
-
-
-
-- **[Amazon Chime](https://aws.amazon.com/chime/)**  
-
-  AWS's video conferencing and business communication service. **Best for AWS-centric organizations** .
-
-
-
-- **[GoTo Meeting](https://www.goto.com/meeting)**  
-
-  **The veteran video conferencing platform** — simple, reliable meetings with screen sharing. **Best for straightforward meeting needs** .
-
-
-
-- **[BlueJeans](https://www.bluejeans.com/)**  
-
-  Verizon's video conferencing platform (discontinued for new customers) — **historically significant** .
-
-
-
-- **[RingCentral Video](https://www.ringcentral.com/)**  
-
-  **Unified communications with video meetings** — messaging, video, and phone in one platform. **Best for organizations replacing traditional PBX** .
-
-
-
-- **[Dialpad Meetings](https://www.dialpad.com/)**  
-
-  **AI-powered video meetings** with real-time transcription and sentiment analysis. **Best for sales and customer-facing teams** .
-
-
-
-- **[Whereby](https://whereby.com/)**  
-
-  **Browser-based video meetings** — no downloads, embeddable in websites. **Best for customer-facing video** .
+| Platform | Company Scale (Revenue / Valuation) | Starting Paid Price | Free Tier / Trial Limit |
+|---|---|---|---|
+| **[Google Meet](https://meet.google.com/)**<br>Browser-based video conferencing integrated with Google Workspace. | **$4.24T** Market Cap<br>($350B+ annual revenue / Alphabet Inc.) | **$7.00** / user / month (Google Workspace Business Starter) | Free forever: **60-minute limit** on group calls (up to 100 participants; 24h limit on 1:1 calls). |
+| **[Microsoft Teams](https://www.microsoft.com/microsoft-teams/)**<br>Enterprise collaboration hub with video meetings, chat, and Office 365. | **$3.10T** Market Cap<br>($245B+ annual revenue / Microsoft Corp.) | **$4.00** / user / month (Teams Essentials, annual billing) | Free forever: **60-minute limit** on group calls (up to 100 participants, 5 GB cloud storage). |
+| **[Amazon Chime](https://aws.amazon.com/chime/)**<br>AWS pay-as-you-go video conferencing and business communication service. | **$2.71T** Market Cap<br>($717B+ annual revenue / Amazon.com, Inc.) | **$3.00** / user / day (Pro tier, capped at **$15.00** / user / month max) | Free Basic plan forever: **Unlimited 1:1 voice/video calls** and chat; 3+ participant group meetings require Pro. |
+| **[Cisco Webex](https://www.webex.com/)**<br>Enterprise UC suite with meetings, calling, messaging, and compliance certifications. | **$442B** Market Cap<br>($63.3B annual revenue / Cisco Systems) | **$13.50** / user / month (Webex Starter, annual billing) | Free forever: **40-minute limit** per group meeting (up to 100 participants). |
+| **[BlueJeans](https://www.bluejeans.com/)**<br>Enterprise video platform acquired by Verizon for ~$500M; retired in 2024. | **$170B** Parent Market Cap<br>($138B annual revenue / Verizon Communications; acquired for ~$500M) | **$9.99** / user / month (Standard plan prior to 2024 shutdown) | Service retired (March 2024); historically offered a **14-day free trial** with no permanent free tier. |
+| **[Zoom Workplace](https://zoom.us/)**<br>Market-leading video conferencing suite with AI Companion, phone, and chat. | **$27.2B** Market Cap<br>($4.87B annual revenue / Zoom Video Communications) | **$13.33** / user / month ($159.90/year annual billing for Pro) | Free Basic plan forever: **40-minute limit** on group meetings (up to 100 participants). |
+| **[RingCentral Video](https://www.ringcentral.com/)**<br>Unified cloud communications replacing traditional PBX with video & voice. | **$6.50B** Market Cap<br>($2.50B annual revenue / RingCentral, Inc.) | **$20.00** / user / month (RingEX Core, annual billing) | **14-day free trial** with full features; standalone Video Pro free tier capped calls at 50 minutes. |
+| **[GoTo Meeting](https://www.goto.com/meeting)**<br>Veteran video conferencing & screen-sharing platform for simple meeting needs. | **$4.30B** Private Valuation<br>($1.30B annual revenue / GoTo Technologies) | **$12.00** / organizer / month (Professional plan, annual billing) | **14-day free trial**; limited free version restricted to **3 participants & 40-minute limit**. |
+| **[Dialpad Meetings](https://www.dialpad.com/)**<br>AI-powered video meetings with real-time transcription and sentiment analysis. | **$2.20B** Private Valuation<br>($300M+ ARR / Dialpad, Inc.) | **$15.00** / user / month (Dialpad Standard, annual billing) | **14-day free trial** with full AI features; non-profits eligible for up to 10 free licenses via Dialpad for Good. |
+| **[Whereby](https://whereby.com/)**<br>Browser-based, embeddable video meetings without downloads or logins required. | **$48M** Valuation<br>($10M annual revenue / Whereby AS) | **$10.99** / month (Pro plan for individuals/small teams) | Free forever: **30-minute limit** per meeting, capped at **4 participants** and 1 room URL. |
 
 
 
