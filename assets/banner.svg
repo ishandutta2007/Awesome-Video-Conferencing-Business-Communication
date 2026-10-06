@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B0F19" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#1F1A3A" />
+    </linearGradient>
+
+    <!-- Glowing Text Gradient -->
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="50%" stop-color="#818CF8" />
+      <stop offset="100%" stop-color="#C084FC" />
+    </linearGradient>
+
+    <!-- Accent Gradient -->
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06B6D4" />
+      <stop offset="100%" stop-color="#6366F1" />
+    </linearGradient>
+
+    <!-- Flowing Line Gradient -->
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.1" />
+      <stop offset="50%" stop-color="#818CF8" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#C084FC" stop-opacity="0.1" />
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes pulseGlow {
+      0% { opacity: 0.3; transform: scale(0.98); }
+      50% { opacity: 0.7; transform: scale(1.02); }
+      100% { opacity: 0.3; transform: scale(0.98); }
+    }
+    @keyframes dashMove {
+      0% { stroke-dashoffset: 100; }
+      100% { stroke-dashoffset: 0; }
+    }
+    @keyframes floatCard {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-6px); }
+      100% { transform: translateY(0px); }
+    }
+    .bg-grid {
+      stroke: #ffffff;
+      stroke-opacity: 0.03;
+      stroke-width: 1;
+    }
+    .glow-circle {
+      animation: pulseGlow 6s infinite ease-in-out;
+      transform-origin: center;
+    }
+    .animated-line {
+      stroke-dasharray: 12, 12;
+      animation: dashMove 15s linear infinite;
+    }
+    .floating-pill-1 { animation: floatCard 5s ease-in-out infinite; }
+    .floating-pill-2 { animation: floatCard 7s ease-in-out infinite 1s; }
+    .floating-pill-3 { animation: floatCard 6s ease-in-out infinite 2s; }
+    .title-text {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 800;
+      font-size: 42px;
+      fill: url(#titleGrad);
+    }
+    .subtitle-text {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 500;
+      font-size: 19px;
+      fill: #94A3B8;
+    }
+    .badge-text {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-weight: 600;
+      font-size: 13px;
+      fill: #E2E8F0;
+    }
+  </style>
+
+  <!-- Background -->
+  <rect width="1200" height="360" rx="16" fill="url(#bgGrad)" />
+
+  <!-- Grid Background Pattern -->
+  <g class="bg-grid">
+    <path d="M0,60 H1200 M0,120 H1200 M0,180 H1200 M0,240 H1200 M0,300 H1200" />
+    <path d="M150,0 V360 M300,0 V360 M450,0 V360 M600,0 V360 M750,0 V360 M900,0 V360 M1050,0 V360" />
+  </g>
+
+  <!-- Dynamic Glowing Orbs in Background (Behind Text) -->
+  <circle class="glow-circle" cx="200" cy="180" r="140" fill="#0284C7" fill-opacity="0.12" filter="url(#glow)" />
+  <circle class="glow-circle" cx="1000" cy="120" r="160" fill="#7C3AED" fill-opacity="0.15" filter="url(#glow)" />
+
+  <!-- Dynamic Flowing Connection Waves (Under text layer) -->
+  <path class="animated-line" d="M -50 280 Q 300 120 600 260 T 1250 140" fill="none" stroke="url(#lineGrad)" stroke-width="3" />
+  <path class="animated-line" d="M -50 100 Q 400 320 800 100 T 1250 280" fill="none" stroke="url(#lineGrad)" stroke-width="2" />
+
+  <!-- Foreground Title and Subtitle Block (Ensured Foreground contrast) -->
+  <g transform="translate(80, 140)">
+    <!-- Category Badge -->
+    <rect x="0" y="-70" width="280" height="32" rx="16" fill="#1E293B" stroke="#334155" stroke-width="1.5" />
+    <circle cx="18" cy="-54" r="6" fill="#10B981" />
+    <text x="34" y="-49" class="badge-text" fill="#38BDF8">Awesome Ecosystem • 2026 Edition</text>
+
+    <!-- Main Title -->
+    <text x="0" y="10" class="title-text">Video Conferencing &amp; Business Comm</text>
+    
+    <!-- Subtitle -->
+    <text x="0" y="48" class="subtitle-text">Curated List of Commercial SaaS Products, WebRTC SFUs &amp; Open-Source Projects</text>
+  </g>
+
+  <!-- Dynamic Floating Tech Pill Cards (Side Highlights) -->
+  <g class="floating-pill-1" transform="translate(860, 60)">
+    <rect width="140" height="42" rx="21" fill="#1E293B" fill-opacity="0.8" stroke="#38BDF8" stroke-width="1.5" />
+    <circle cx="24" cy="21" r="8" fill="#0284C7" />
+    <text x="42" y="26" class="badge-text">WebRTC SFU</text>
+  </g>
+
+  <g class="floating-pill-2" transform="translate(980, 150)">
+    <rect width="130" height="42" rx="21" fill="#1E293B" fill-opacity="0.8" stroke="#818CF8" stroke-width="1.5" />
+    <circle cx="24" cy="21" r="8" fill="#6366F1" />
+    <text x="42" y="26" class="badge-text">LiveKit / Jitsi</text>
+  </g>
+
+  <g class="floating-pill-3" transform="translate(890, 240)">
+    <rect width="160" height="42" rx="21" fill="#1E293B" fill-opacity="0.8" stroke="#C084FC" stroke-width="1.5" />
+    <circle cx="24" cy="21" r="8" fill="#A855F7" />
+    <text x="42" y="26" class="badge-text">E2EE Messaging</text>
+  </g>
+</svg>
